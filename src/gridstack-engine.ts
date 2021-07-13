@@ -387,7 +387,7 @@ export class GridStackEngine {
         node.y = this.maxRow - node.h;
       }
     }
-
+    node.w = node.h;
     return node;
   }
 

@@ -62,6 +62,7 @@ $animation_speed: .3s !default;
     &.ui-draggable-dragging,
     &.ui-resizable-resizing {
       z-index: 100;
+      background-color: rebeccapurple;
 
       > .grid-stack-item-content {
         box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);

@@ -43,6 +43,7 @@ export interface GridStackOptions {
     `alwaysShowResizeHandle: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test( navigator.userAgent )`
     See [example](http://gridstack.github.io/gridstack.js/demo/mobile.html) */
   alwaysShowResizeHandle?: boolean;
+
   /** turns animation on (default?: true) */
   animate?: boolean;
 

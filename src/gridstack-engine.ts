@@ -349,12 +349,14 @@ export class GridStackEngine {
     if (node.minH) { node.h = Math.max(node.h, node.minH); }
 
     if (node.w > this.column) {
+      // This couses issues with our production app, that are not easy to reproduce
+
       // if user loaded a larger than allowed widget for current # of columns,
       // remember it's full width so we can restore back (1 -> 12 column) #1655
-      if (this.column < 12) {
-        node.w = Math.min(12, node.w);
-        this.cacheOneLayout(node, 12);
-      }
+      //if (this.column < 12) {
+      //  node.w = Math.min(12, node.w);
+      //  this.cacheOneLayout(node, 12);
+      //}
       node.w = this.column;
     } else if (node.w < 1) {
       node.w = 1;
